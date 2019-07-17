@@ -1,6 +1,3 @@
-// Tutorial by http://youtube.com/CodeExplained
-// api key : 82005d27a116c2880c8f0fcb866998a0
-
 // SELECT ELEMENTS
 const iconElement1 = document.querySelector('.weather-icon1');
 const iconElement2 = document.querySelector('.weather-icon2');
@@ -99,7 +96,6 @@ function getWeather(latitude, longitude) {
       weather.date3 = data.list[16].dt_txt.slice(0, 10);
       weather.date4 = data.list[24].dt_txt.slice(0, 10);
       weather.date5 = data.list[32].dt_txt.slice(0, 10);
-      // console.log(data);
     })
     .then(function() {
       displayWeather();
