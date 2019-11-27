@@ -1,55 +1,54 @@
 * {
-  font-family: 'Rimouski';
+	font-family: 'Rimouski';
 }
 
 body {
-  background: #023f66;
+	background: #023f66;
 }
 
 .container {
-  width: 60vw;
-  background-color: #fff;
+	width: 60vw;
+	background-color: #fff;
 
-  display: block;
-  margin: 30px auto;
+	display: block;
+	margin: 30px auto;
 
-  border-radius: 10px;
-  padding-bottom: 10px;
-  box-shadow: 3px 3px 3px black;
+	border-radius: 10px;
+	padding-bottom: 10px;
+	box-shadow: 3px 3px 3px black;
 }
 
 .app-title {
-  width: 60vw;
-  border-radius: 10px 10px 0 0;
-  padding: 10px;
+	width: 60vw;
+	border-radius: 10px 10px 0 0;
+	padding: 10px;
 }
 
 .app-title p {
-  text-align: center;
-  margin: 0 auto;
-  font-size: 1.8em;
-  color: #023f66;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 1.8em;
+	color: #023f66;
 }
 
 .notification {
-  background-color: #f8d7da;
-  display: none;
+	background-color: #f8d7da;
+	display: none;
 }
 
 .notification p {
-  color: #721c24;
-  font-size: 1.2em;
-  margin: 0;
-  text-align: center;
-  padding: 10px 0;
+	color: #721c24;
+	font-size: 1.2em;
+	margin: 0;
+	text-align: center;
+	padding: 10px 0;
 }
 
 .weather-container {
-  width: 60vw;
-  height: 300px;
-  background-color: #dce0e6;
-  text-align: center;
-  align-content: space-between;
+	width: 60vw;
+	background-color: #dce0e6;
+	text-align: center;
+	align-content: space-between;
 }
 
 .weather-icon,
@@ -58,7 +57,7 @@ body {
 .weather-icon3,
 .weather-icon4,
 .weather-icon5 {
-  height: 128px;
+	height: 125px;
 }
 
 .weather-icon img,
@@ -67,8 +66,8 @@ body {
 .weather-icon3 img,
 .weather-icon4 img,
 .weather-icon5 img {
-  display: block;
-  margin: 0 auto;
+	display: block;
+	margin: 0 auto;
 }
 
 .temperature-value,
@@ -77,7 +76,7 @@ body {
 .temperature-value3,
 .temperature-value4,
 .temperature-value5 {
-  height: 60px;
+	height: 60px;
 }
 
 .temperature-value p,
@@ -86,12 +85,12 @@ body {
 .temperature-value3 p,
 .temperature-value4 p,
 .temperature-value5 p {
-  padding: 0;
-  margin: 0;
-  color: #023f66;
-  font-size: 4em;
-  text-align: center;
-  cursor: pointer;
+	padding: 0;
+	margin: 0;
+	color: #023f66;
+	font-size: 4em;
+	text-align: center;
+	cursor: pointer;
 }
 
 .temperature-value p:hover {
@@ -103,8 +102,8 @@ body {
 .temperature-value3 span,
 .temperature-value4 span,
 .temperature-value5 span {
-  color: #023f66;
-  font-size: 0.5em;
+	color: #023f66;
+	font-size: 0.5em;
 }
 
 .temperature-description {
@@ -116,22 +115,22 @@ body {
 .temperature-description3 p,
 .temperature-description4 p,
 .temperature-description5 p {
-  padding: 8px;
-  margin: 0;
-  color: #023f66;
-  text-align: center;
-  font-size: 1.2em;
+	padding: 8px;
+	margin: 0;
+	color: #023f66;
+	text-align: center;
+	font-size: 1.2em;
 }
 
 .location {
 }
 
 .location p {
-  margin: 0;
-  padding: 10px;
-  color: #023f66;
-  text-align: center;
-  font-size: 1.3em;
+	margin: 0;
+	padding: 10px;
+	color: #023f66;
+	text-align: center;
+	font-size: 1.3em;
 }
 
 .date p,
@@ -140,30 +139,123 @@ body {
 .date3 p,
 .date4 p,
 .date5 p {
-  margin: 0;
-  padding-top: 10px;
-  color: #023f66;
-  text-align: center;
-  font-size: 1.3em;
+	margin: 0;
+	padding-top: 10px;
+	color: #023f66;
+	text-align: center;
+	font-size: 1.3em;
 }
 
 .forecast {
-  display: flex;
-  flex-direction: row;
-  width: 60vw;
-  padding: 10px;
+	display: flex;
+	flex-direction: row;
+	width: 60vw;
+	padding: 10px;
 }
 
 .days {
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 #footer {
-  color: #ccc;
-  padding-top: 50px;
-  text-align: center;
+	color: #ccc;
+	padding-top: 50px;
+	text-align: center;
 }
 
 #footer a {
-  color: #ccc;
+	color: #ccc;
+}
+
+@media (max-width: 500px) {
+	.container {
+		margin: 5vw;
+		margin: 30px auto;
+	}
+
+	.forecast {
+		display: block;
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.days {
+		border-bottom: 2px solid #dce0e6;
+	}
+
+	.days:last-child {
+		border-bottom: none;
+	}
+
+	.app-title p {
+		font-size: 3em;
+	}
+
+	.app-title {
+		padding: 10px 0;
+	}
+
+	.notification p {
+		font-size: 3em;
+	}
+
+	.temperature-value p,
+	.temperature-value1 p,
+	.temperature-value2 p,
+	.temperature-value3 p,
+	.temperature-value4 p,
+	.temperature-value5 p {
+		font-size: 4em;
+		margin: 3px;
+	}
+
+	.temperature-value,
+	.temperature-value1,
+	.temperature-value2,
+	.temperature-value3,
+	.temperature-value4,
+	.temperature-value5 {
+		margin: 5px;
+	}
+
+	.temperature-value span,
+	.temperature-value1 span,
+	.temperature-value2 span,
+	.temperature-value3 span,
+	.temperature-value4 span,
+	.temperature-value5 span {
+		font-size: 0.5em;
+	}
+
+	.temperature-description p,
+	.temperature-description1 p,
+	.temperature-description2 p,
+	.temperature-description3 p,
+	.temperature-description4 p,
+	.temperature-description5 p {
+		font-size: 2em;
+	}
+
+	.location p {
+		font-size: 2em;
+	}
+
+	.date p,
+	.date1 p,
+	.date2 p,
+	.date3 p,
+	.date4 p,
+	.date5 p {
+		font-size: 2em;
+	}
+
+	.weather-icon,
+	.weather-icon1,
+	.weather-icon2,
+	.weather-icon3,
+	.weather-icon4,
+	.weather-icon5 {
+		height: 25vw;
+		margin-bottom: 15px;
+	}
 }
