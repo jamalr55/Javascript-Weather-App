@@ -19,7 +19,7 @@ body {
 }
 
 .app-title {
-	width: 60vw;
+	width: 100%;
 	border-radius: 10px 10px 0 0;
 	padding: 10px;
 }
@@ -45,7 +45,7 @@ body {
 }
 
 .weather-container {
-	width: 60vw;
+	width: 100%;
 	background-color: #dce0e6;
 	text-align: center;
 	align-content: space-between;
@@ -149,7 +149,7 @@ body {
 .forecast {
 	display: flex;
 	flex-direction: row;
-	width: 60vw;
+	width: 100%;
 	padding: 10px;
 }
 
@@ -169,7 +169,7 @@ body {
 
 @media (max-width: 500px) {
 	.container {
-		margin: 5vw;
+		width: 90%;
 		margin: 30px auto;
 	}
 
